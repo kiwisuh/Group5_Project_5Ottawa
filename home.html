@@ -1,0 +1,80 @@
+  <!doctype html>
+  <html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+  body, html {
+      height:100;
+      font-family: Tahoma, Geneva, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  html {
+    animation:gallery 10s infinite;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+  .hero-image {
+    height: 100px;
+    width: 100%;
+    background:#ccc;
+    position: relative;
+  }
+
+ @media screen and (device-width: 480px) {
+    #description {width:300;}
+}
+
+
+
+  @keyframes gallery {
+      0%{ background: url(media/splash/Tulip_1.jpg) no-repeat center center fixed; background-size: cover;}
+      33%{ background: url(media/splash/Chateau_2.jpg) no-repeat center center fixed; background-size: cover;}
+      66%{ background: url(media/splash/Canal.JPG) no-repeat center center fixed; background-size: cover;}
+      100%{ background: url(media/splash/Parl.jpg) no-repeat center center fixed; background-size: cover;}
+  }
+  </style>
+
+  <title>50 Ottawa</title>
+
+  </head>
+
+  <body>
+
+  <div class="splash" style="text-align:center;">
+
+  <img src="50.png" height="300" />
+ 
+
+<div style="text-align:center;">
+ <img src="Description.png"/>
+    
+
+ <br />
+  <br />
+   <br />
+   <br />
+   <br />
+
+  <a href="Main.html">
+    <img onmouseover="this.src='enter_h.png';"onmouseout="this.src='enter_i.png';" src="enter_i.png" height="100" text-align:center />
+  </a>
+
+
+ 
+
+
+     
+
+
+
+  </div>
+
+  </body>
+  </html>

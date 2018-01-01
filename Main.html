@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset = UTF-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="jquery.cycle.all.js"></script>
+		<title>50 Ottawa</title>
+
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#canvas").dblclick(function(){
+				$("#myModal").fadeIn(1000);
+			});
+
+			$("#myTable").click(function(){
+				$("#myModal").fadeIn(1000);
+			});
+		});
+
+	</script>
+
+</head>
+
+
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="name or category ex. event" title="Type in a name">
+
+	<table id="myTable">
+		<tr class="header">
+			<th style="width:60%;">Name</th>
+			<th style="width:40%;">Category</th>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_49')">Art Gallery</td>
+			<td>Art</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_43')">Bike Through the City</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_3')">Blumenstudio</td>
+			<td>Shop</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_0')">Boutique Hunting</td>
+			<td>Shop</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_31')">Canada Day on the Hill</td>
+			<td>Event</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_44')">Chateau Laurier</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_19')">China Doll Karaoke</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_37')">Dragon Boat Festival</td>
+			<td>Festival</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_27')">Dundonald Park Movies</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_6')">El Camino</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_20')">Extreme Sports</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_16')">Flapjack's</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_38')">Gatineau</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_42')">Glebe Photoshoot</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_10')">High Teas</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_39')">Hog's Back Falls</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_36')">Hot Air Balloon Fesitval</td>
+			<td>Festival</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_5')">House of Targ</td>
+			<td>Food</td>
+		</tr
+		><tr>
+			<td onclick="openModal('leaf_12')">Kettleman's</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_22')">LIVE! On Elgin</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_41')">Love Lock Bridge</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_25')">Lowertown Brewery Bingo</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_17')">Mayfair</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_34')">Music Festivals</td>
+			<td>Festival</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_48')">NAC</td>
+			<td>Art</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_32')">Nature Nocturne</td>
+			<td>Event</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_4')">Ottawa's Best Burger</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_14')">Playa del Popsical</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_13')">Pub Italia</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_18')">Remi Royale</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_45')">Rideau Canal Skating</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_1')">Rideau Centre Shopping</td>
+			<td>Shop</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_15')">Rideau Street McDonald's</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_47')">Ride OC Transpo</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_28')">Run Ottawa</td>
+			<td>Event</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_29')">Sens Game</td>
+			<td>Event</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_11')">Stella Luna</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_7')">Suzy Q Donuts</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_30')">TD Place</td>
+			<td>Event</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_23')">The Loft</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_24')">The Mud Oven</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_40')">Tin House</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_46')">Tour of Parliament</td>
+			<td>Sightseeing</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_35')">Tulip Festival</td>
+			<td>Festival</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_2')">Used Book Store</td>
+			<td>Shop</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_21')">Vertical Reality</td>
+			<td>Entertainment</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_9')">Wag Cafe</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_8')">Ward 14</td>
+			<td>Food</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_33')">Winterlude</td>
+			<td>Festival</td>
+		</tr>
+
+		<tr>
+			<td onclick="openModal('leaf_26')">Yoga on Parliament</td>
+			<td>Entertainment</td>
+		</tr>
+	</table>
+
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" class="hvr-grow" onclick="openNav()">&#9776; Discover</span>
+
+<div id="canvas">
+</div>
+
+<script src="protoclass.js"></script>
+<script src="box2d.js"></script>
+<script src="Main.js"></script>
+
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div id="leaf_content" style='opacity: 1.0; filter: alpha(opacity=100); box-shadow: 10px 10px 20px rgba(0,0,0,0.3); border-radius: 25px;'>
+		<h1 id="title">title</h1>
+		<p id="description"></p>
+		<h2>Opening Hours</h2>
+		<p id="timehour"></p>
+		<h2>Location</h2>
+		<p id="location"></p>
+        <h2>Prices</h2>
+		<p id="prices"></p>
+	</div>
+	<br />
+	<div id="images_media"></div>
+</div>
+
+
+<canvas id="myBG">
+</canvas>
+<!--background-image:url('maple-leaves-background.jpg-->
+<div style=" z-index:-1; text-align:center;"><img class="back" src="50.png" /></div>
+<div style="background-color:#e6e6e6; height: 100%;
+width: 100%;
+margin: 0;
+position: fixed;
+left: 0;
+top: 0;
+opacity: 0.2;
+filter: alpha(opacity=20);
+ z-index:-1;"></div>
+
+
+</body>
+
+
+</html>
